@@ -120,3 +120,4 @@ C:\Users\gimig\WpfProjekter\Ny mappe\PulseMon\obj\Debug\net10.0-windows\refint\P
 C:\Users\gimig\WpfProjekter\Ny mappe\PulseMon\obj\Debug\net10.0-windows\PulseMon.pdb
 C:\Users\gimig\WpfProjekter\Ny mappe\PulseMon\obj\Debug\net10.0-windows\PulseMon.genruntimeconfig.cache
 C:\Users\gimig\WpfProjekter\Ny mappe\PulseMon\obj\Debug\net10.0-windows\ref\PulseMon.dll
+C:\Users\gimig\WpfProjekter\Ny mappe\PulseMon\obj\Debug\net10.0-windows\PulseMon.sourcelink.json

@@ -1,4 +1,5 @@
 using System.Windows;
+using System.Windows.Controls.Primitives;
 using System.Windows.Threading;
 using PulseMon.Services;
 using PulseMon.ViewModels;
@@ -27,6 +28,16 @@ public partial class MainWindow : Window
         _refreshTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
         _refreshTimer.Tick += (_, _) =>
         {
+            if (_viewModel.IsAutoScale)
+            {
+                CpuPlot.Plot.Axes.AutoScale();
+                GpuPlot.Plot.Axes.AutoScale();
+            }
+            else
+            {
+                CpuPlot.Plot.Axes.SetLimitsY(0, 100);
+                GpuPlot.Plot.Axes.SetLimitsY(0, 100);
+            }
             CpuPlot.Refresh();
             GpuPlot.Refresh();
         };
@@ -89,6 +100,12 @@ public partial class MainWindow : Window
         {
             DragMove();
         }
+    }
+
+    private void ResizeGrip_DragDelta(object sender, DragDeltaEventArgs e)
+    {
+        Width  = Math.Max(MinWidth,  Width  + e.HorizontalChange);
+        Height = Math.Max(MinHeight, Height + e.VerticalChange);
     }
 
     private void CloseButton_Click(object sender, RoutedEventArgs e) => Close();

@@ -6,14 +6,19 @@
         Width="420" Height="360"
         MinWidth="320" MinHeight="280"
         WindowStyle="None"
-        AllowsTransparency="True"
-        Background="Transparent"
+        Background="{StaticResource BackgroundBrush}"
         ResizeMode="CanResize"
         Topmost="{Binding IsAlwaysOnTop}"
         WindowStartupLocation="CenterScreen">
 
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0"
+                      ResizeBorderThickness="5"
+                      GlassFrameThickness="0"
+                      UseAeroCaptionButtons="False"/>
+    </WindowChrome.WindowChrome>
+
     <Border Background="{StaticResource BackgroundBrush}"
-            CornerRadius="8"
             BorderBrush="{StaticResource SurfaceBorderBrush}"
             BorderThickness="1">
         <DockPanel>
@@ -40,7 +45,13 @@
                 </StackPanel>
 
                 <!-- Knapper -->
-                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <StackPanel Grid.Column="1" Orientation="Horizontal"
+                            WindowChrome.IsHitTestVisibleInChrome="True">
+                    <ToggleButton Style="{StaticResource PinButtonStyle}"
+                                  IsChecked="{Binding IsAutoScale}"
+                                  ToolTip="Auto-skala: tilpas Y-akse til faktisk dataniveau">
+                        <TextBlock Text="⇅" FontSize="12"/>
+                    </ToggleButton>
                     <ToggleButton Style="{StaticResource PinButtonStyle}"
                                   IsChecked="{Binding IsAlwaysOnTop}"
                                   ToolTip="Hold øverst">

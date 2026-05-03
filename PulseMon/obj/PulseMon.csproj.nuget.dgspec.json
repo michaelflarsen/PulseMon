@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\pulsemon\\PulseMon.csproj": {}
+    "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\PulseMon\\PulseMon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\pulsemon\\PulseMon.csproj": {
+    "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\PulseMon\\PulseMon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\pulsemon\\PulseMon.csproj",
+        "projectUniqueName": "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\PulseMon\\PulseMon.csproj",
         "projectName": "PulseMon",
-        "projectPath": "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\pulsemon\\PulseMon.csproj",
+        "projectPath": "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\PulseMon\\PulseMon.csproj",
         "packagesPath": "C:\\Users\\gimig\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\pulsemon\\obj\\",
+        "outputPath": "C:\\Users\\gimig\\WpfProjekter\\Ny mappe\\PulseMon\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gimig\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -16,6 +16,7 @@ public partial class MainViewModel : ObservableObject, IDisposable
     [ObservableProperty] private string _cpuLabel = "CPU: --%";
     [ObservableProperty] private string _gpuLabel = "GPU: --%";
     [ObservableProperty] private bool _isAlwaysOnTop;
+    [ObservableProperty] private bool _isAutoScale;
 
     // Sættes fra MainWindow.xaml.cs efter ScottPlot-kontrollerne er konfigurerede
     public DataStreamer? CpuStreamer { get; set; }
