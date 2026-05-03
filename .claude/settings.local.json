@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"c:\\\\Users\\\\gimig\\\\WpfProjekter\" -Recurse -Filter \"*.csproj\")",
+      "Bash(Select-Object FullName)",
+      "Bash(dotnet new *)",
+      "Bash(dotnet sln *)",
+      "Bash(dotnet restore *)"
+    ]
+  }
+}
