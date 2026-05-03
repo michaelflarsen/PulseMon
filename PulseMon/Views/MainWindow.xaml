@@ -29,6 +29,7 @@
                   Background="{StaticResource TitleBarBrush}"
                   MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
@@ -44,8 +45,17 @@
                                VerticalAlignment="Center"/>
                 </StackPanel>
 
+                <!-- Heartbeat grafik -->
+                <Viewbox Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                         Height="16" IsHitTestVisible="False">
+                    <Path Data="M 0,12 H 12 L 14,9 L 16,12 H 24 L 26,15 L 28,1 L 30,19 L 32,12 H 40 L 42,7 L 46,7 L 48,12 H 80"
+                          Stroke="#4FC3F7" StrokeThickness="1.8"
+                          StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"
+                          Fill="Transparent"/>
+                </Viewbox>
+
                 <!-- Knapper -->
-                <StackPanel Grid.Column="1" Orientation="Horizontal"
+                <StackPanel Grid.Column="2" Orientation="Horizontal"
                             WindowChrome.IsHitTestVisibleInChrome="True">
                     <ToggleButton Style="{StaticResource PinButtonStyle}"
                                   IsChecked="{Binding IsAutoScale}"
